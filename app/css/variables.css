@@ -1,0 +1,42 @@
+:root{
+    --dough: #fcf0df;
+    --dark-purple: #64234b;
+    --light-red: #ea4a66;
+    --yellow: #f5b957;
+
+    --primary: var(--dough);
+
+    --h1: 7.594rem;
+    --h2: 5.274rem;
+    --h3: 4.157rem;
+    --h4: 2.978rem;
+    --h5: 1.521rem;
+}
+
+
+body{
+    background-color: var(--primary);
+}
+
+.warm{
+    --primary:var(--light-red);
+}
+.cool {
+    --primary: var(--dark-purple);
+}
+
+h1 {
+    font-size: var(--h1);
+}
+h2 {
+    font-size: var(--h2);
+}
+h3 {
+    font-size: var(--h3);
+}
+h4 {
+    font-size: var(--h4);
+}
+h5 {
+    font-size: var(--h5);
+}
