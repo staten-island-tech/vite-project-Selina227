@@ -1,12 +1,21 @@
 import "./style.css";
 import "../CSS/style.css";
 
-document.querySelector(".btn").addEventListener("click", function () {
-  if (document.body.classList.contains("cool")) {
-    document.body.classList.add("warm");
-    document.body.classList.remove("cool");
-  } else {
-    document.body.classList.add("cool");
-    document.body.classList.remove("warm");
-  }
-});
+const DOMSelectors = {
+  box: document.getElementById("container-box"),
+};
+
+function injectCard() {
+  const cardHTML = `<div class="card">
+    <h2>Title</h2>
+    <h2>Price</h2>
+    <h2>Origin Country</h2>
+    <h2>Flavor</h2>
+    <img class="picture" src="${card.imageURL}">
+    <button class="delete-btn">Delete</button>
+  </div>`;
+
+  DOMSelectors.box.insertAdjacentHTML("beforeend", cardHTML);
+}
+
+injectCard();

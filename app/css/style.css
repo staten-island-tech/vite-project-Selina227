@@ -7,3 +7,22 @@ body,
     box-sizing: border-box;
     font-size: 10px;
 }
+
+#container-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.card{
+    margin: 2.5%;
+    padding: 2% 6%;
+    box-shadow: 10px 10px #b6887b;
+    background-color: #edb8af;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 30px
+}
