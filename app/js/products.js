@@ -1,4 +1,4 @@
-const Snacks = [
+const snacks = [
   {
     title: "Pocky Sticks",
     price: 3.5,
@@ -36,7 +36,6 @@ const Snacks = [
     price: 3.75,
     originCountry: "Spain",
     flavor: "Cinnamon",
-
     imageUrl: "",
     altText: "",
   },
@@ -153,3 +152,5 @@ const Snacks = [
     altText: "",
   },
 ];
+
+export { snacks };
