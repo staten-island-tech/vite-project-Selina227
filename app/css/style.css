@@ -9,7 +9,7 @@ body,
     font-size: 10px;
 }
 
-#container-box {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
