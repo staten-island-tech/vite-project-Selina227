@@ -8,15 +8,26 @@ const expensiveSnacks = snacks.filter((el) => el.price > 3.0);
 document.querySelector(".all").addEventListener("click", function (event) {
   event.preventDefault();
   console.log(allSnacks);
-  if (document.body.classList.contains("cheap")) {
-    document.body.classList.remove("cheap");
+  if (document.body.classList.contains("cheap1")) {
+    document.body.classList.remove("cheap1");
     document.body.classList.add("container");
   } else {
-    document.body.classList.remove("expensive");
+    document.body.classList.remove("expensive1");
     document.body.classList.add("container");
   }
 
   allCards();
+
+  const cards2 = document.querySelectorAll(".card");
+  cards2.forEach((card) => {
+    if (card.body.classList.contains("cheap1")) {
+      card.body.classList.remove("cheap1");
+      card.body.classList.add("card");
+    } else {
+      card.body.classList.remove("expensive1");
+      card.body.classList.add("card");
+    }
+  });
 });
 
 function allCards() {
