@@ -40,15 +40,3 @@ h4 {
 h5 {
     font-size: var(--h5);
 }
-
-.card{
-    background-color: var(--dark-purple);
-  }
-
-.cheap1{
-    background-color: var(--dark-purple);
-  }
-
-.expensive1{
-    background-color: var(--dark-purple);
-  }

@@ -10,6 +10,11 @@ document.querySelector(".all").addEventListener("click", function (event) {
   allCards();
 });
 
+document.querySelector(".cheap").addEventListener("click", function (event) {
+  event.preventDefault();
+  cheapCards();
+});
+
 function allCards() {
   const container = document.querySelector(".container");
   container.innerHTML = "";
@@ -25,3 +30,23 @@ function allCards() {
       </div>`;
   });
 }
+
+function cheapCards() {
+  container.innerHTML = "";
+  cheapSnacks.forEach((snack) => {
+    container.innerHTML += `
+    <div class="card">
+      <h2> ${snack.title} </h2>
+      <h4> ${snack.price} </h4>
+       <h4> ${snack.originCountry} </h4>
+      <img src="${snack.imageUrl}" alt="${snack.altText}">
+      <h5>Flavor: ${snack.flavor} </h5>
+    </div>`;
+  });
+}
+
+snacks.filter((snack) => snack.flavor.includes("Spicy"));
+
+forEach;
+filter;
+includes;
