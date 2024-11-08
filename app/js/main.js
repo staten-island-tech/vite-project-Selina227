@@ -18,6 +18,16 @@ document
     expensiveCards();
   });
 
+document.querySelector(".european").addEventListener("click", function (event) {
+  event.preventDefault();
+  europeanCards();
+});
+
+document.querySelector(".asian").addEventListener("click", function (event) {
+  event.preventDefault();
+  asianCards();
+});
+
 function allCards() {
   const container = document.querySelector(".container");
   container.innerHTML = "";
@@ -68,8 +78,51 @@ function expensiveCards() {
   });
 }
 
-snacks.filter((snack) => snack.flavor.includes("Spicy"));
+function europeanCards() {
+  const container = document.querySelector(".container");
+  container.innerHTML = "";
+  const europeanCountries = ["Italy", "Greece", "Spain", "UK", "France"];
+  const europeanSnacks = snacks.filter((snack) =>
+    europeanCountries.some((country) => snack.originCountry.includes(country))
+  );
 
-forEach;
-filter;
-includes;
+  europeanSnacks.forEach((snack) => {
+    container.innerHTML += `
+    <div class="card">
+      <h2> ${snack.title} </h2>
+      <h4> ${snack.price} </h4>
+       <h4> ${snack.originCountry} </h4>
+      <img src="${snack.imageUrl}" alt="${snack.altText}">
+      <h5>Flavor: ${snack.flavor} </h5>
+    </div>`;
+  });
+}
+
+function asianCards() {
+  const container = document.querySelector(".container");
+  container.innerHTML = "";
+  const asianCountries = [
+    "Japan",
+    "India",
+    "China",
+    "Singapore",
+    "Philippines",
+    "Thailand",
+    "Bangladesh",
+    "Lebanon",
+  ];
+  const asianSnacks = snacks.filter((snack) =>
+    asianCountries.some((country) => snack.originCountry.includes(country))
+  );
+
+  asianSnacks.forEach((snack) => {
+    container.innerHTML += `
+    <div class="card">
+      <h2> ${snack.title} </h2>
+      <h4> ${snack.price} </h4>
+       <h4> ${snack.originCountry} </h4>
+      <img src="${snack.imageUrl}" alt="${snack.altText}">
+      <h5>Flavor: ${snack.flavor} </h5>
+    </div>`;
+  });
+}
