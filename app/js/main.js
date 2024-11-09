@@ -91,7 +91,14 @@ function expensiveCards() {
 function europeanCards() {
   const container = document.querySelector(".container");
   container.innerHTML = "";
-  const europeanCountries = ["Italy", "Greece", "Spain", "UK", "France"];
+  const europeanCountries = [
+    "Italy",
+    "Greece",
+    "Spain",
+    "UK",
+    "France",
+    "Germany",
+  ];
   const europeanSnacks = snacks.filter((snack) =>
     europeanCountries.some((country) => snack.originCountry.includes(country))
   );
@@ -120,6 +127,7 @@ function asianCards() {
     "Thailand",
     "Bangladesh",
     "Lebanon",
+    "Malaysia",
   ];
   const asianSnacks = snacks.filter((snack) =>
     asianCountries.some((country) => snack.originCountry.includes(country))
