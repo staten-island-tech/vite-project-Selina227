@@ -28,6 +28,16 @@ document.querySelector(".asian").addEventListener("click", function (event) {
   asianCards();
 });
 
+document.querySelector(".light-b").addEventListener("click", function () {
+  document.body.classList.remove("dark");
+  document.body.classList.add("light");
+});
+
+document.querySelector(".dark-b").addEventListener("click", function () {
+  document.body.classList.remove("light");
+  document.body.classList.add("dark");
+});
+
 function allCards() {
   const container = document.querySelector(".container");
   container.innerHTML = "";
@@ -36,9 +46,9 @@ function allCards() {
     container.innerHTML += `
       <div class="card">
         <h2> ${snack.title} </h2>
-        <h4> ${snack.price} </h4>
+        <h4> $${snack.price} </h4>
          <h4> ${snack.originCountry} </h4>
-        <img src="${snack.imageUrl}" alt="${snack.altText}">
+        <img class="pic" src="${snack.imageUrl}" alt="${snack.altText}">
         <h5>Flavor: ${snack.flavor} </h5>
       </div>`;
   });
@@ -53,9 +63,9 @@ function cheapCards() {
     container.innerHTML += `
     <div class="card">
       <h2> ${snack.title} </h2>
-      <h4> ${snack.price} </h4>
+      <h4> $${snack.price} </h4>
        <h4> ${snack.originCountry} </h4>
-      <img src="${snack.imageUrl}" alt="${snack.altText}">
+      <img class="pic" src="${snack.imageUrl}" alt="${snack.altText}">
       <h5>Flavor: ${snack.flavor} </h5>
     </div>`;
   });
@@ -70,9 +80,9 @@ function expensiveCards() {
     container.innerHTML += `
     <div class="card">
       <h2> ${snack.title} </h2>
-      <h4> ${snack.price} </h4>
+      <h4> $${snack.price} </h4>
        <h4> ${snack.originCountry} </h4>
-      <img src="${snack.imageUrl}" alt="${snack.altText}">
+      <img class="pic" src="${snack.imageUrl}" alt="${snack.altText}">
       <h5>Flavor: ${snack.flavor} </h5>
     </div>`;
   });
@@ -90,9 +100,9 @@ function europeanCards() {
     container.innerHTML += `
     <div class="card">
       <h2> ${snack.title} </h2>
-      <h4> ${snack.price} </h4>
+      <h4> $${snack.price} </h4>
        <h4> ${snack.originCountry} </h4>
-      <img src="${snack.imageUrl}" alt="${snack.altText}">
+      <img class="pic" src="${snack.imageUrl}" alt="${snack.altText}">
       <h5>Flavor: ${snack.flavor} </h5>
     </div>`;
   });
@@ -119,9 +129,9 @@ function asianCards() {
     container.innerHTML += `
     <div class="card">
       <h2> ${snack.title} </h2>
-      <h4> ${snack.price} </h4>
+      <h4> $${snack.price} </h4>
        <h4> ${snack.originCountry} </h4>
-      <img src="${snack.imageUrl}" alt="${snack.altText}">
+      <img class="pic" src="${snack.imageUrl}" alt="${snack.altText}">
       <h5>Flavor: ${snack.flavor} </h5>
     </div>`;
   });
