@@ -28,14 +28,14 @@ document.querySelector(".asian").addEventListener("click", function (event) {
   asianCards();
 });
 
-document.querySelector(".light-b").addEventListener("click", function () {
-  document.body.classList.remove("dark");
-  document.body.classList.add("light");
-});
-
-document.querySelector(".dark-b").addEventListener("click", function () {
-  document.body.classList.remove("light");
-  document.body.classList.add("dark");
+document.querySelector(".button").addEventListener("click", function () {
+  if (document.body.classList.contains("light")) {
+    document.body.classList.add("dark");
+    document.body.classList.remove("light");
+  } else {
+    document.body.classList.add("light");
+    document.body.classList.remove("dark");
+  }
 });
 
 function allCards() {

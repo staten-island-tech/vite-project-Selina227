@@ -30,25 +30,11 @@ body{
     box-shadow: 20px 20px var(--secondary);
 }
 
-.all, .cheap, .expensive, .european, .asian {
+.all, .cheap, .expensive, .european, .asian, .button {
     background-color: var(--yellow);
     box-shadow: 5px 7px var(--pink);
     border: 3px solid var(--brown);
     color: var(--brown);
-}
-
-.light-b {
-    background-color: var(--dough);
-    box-shadow: 5px 7px var(--yellow);
-    border: 3px solid var(--pink);
-    color: var(--brown)
-}
-
-.dark-b {
-    background-color: var(--brown);
-    box-shadow: 5px 7px var(--yellow);
-    border: 3px solid var(--pink);
-    color: var(--dough);
 }
 
 h1 {
