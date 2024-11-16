@@ -1,8 +1,13 @@
 :root{
-    --dough: #fff8de;
+    --dough: #fffcef;
     --brown: #882424;
     --pink: #fa8484;
+
     --yellow: #ffab4d;
+
+    --chocolate: #301515;
+    --gray: #ccc0a6;
+    --red: #ed6a55;
 
     --h1: 14.6rem;
     --h2: 3.8rem;
@@ -16,12 +21,12 @@ body{
 
 .light{
     --primary: var(--dough);
-    --secondary: var(--yellow);
+    --secondary: var(--brown);
     --tertiary: var(--pink);
 }
 .dark {
-    --primary: var(--brown);
-    --secondary: var(--pink);
+    --primary: var(--chocolate);
+    --secondary: var(--gray);
     --tertiary: var(--yellow);
 }
 
