@@ -26,7 +26,7 @@ body{
 }
 .dark {
     --primary: var(--chocolate);
-    --secondary: var(--gray);
+    --secondary: var(--dough);
     --tertiary: var(--red);
 }
 
