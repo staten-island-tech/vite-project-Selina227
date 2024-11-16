@@ -27,7 +27,7 @@ body{
 .dark {
     --primary: var(--chocolate);
     --secondary: var(--gray);
-    --tertiary: var(--yellow);
+    --tertiary: var(--red);
 }
 
 .card {
@@ -57,5 +57,5 @@ h5 {
 }
 
 h2, h4, h5 {
-    color: var(--primary);
+    color: var(--secondary);
 }
